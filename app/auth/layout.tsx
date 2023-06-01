@@ -1,5 +1,5 @@
-import './../globals.css'
-import NavLink from '../util/NavLink';
+import '@/resources/css/globals.css'
+import NavLink from '@/util/NavLink';
 
 export const metadata = {
   title: 'Create Next App',

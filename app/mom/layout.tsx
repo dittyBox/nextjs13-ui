@@ -1,5 +1,5 @@
-import './../page.module.css'
-import NavLink from '../util/NavLink';
+import '@/resources/css/globals.css'
+import NavLink from '@/util/NavLink';
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,17 +13,32 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+
+
+
   return (
 			<div>
 				<header className="border-b p-4">
-					<nav className="space-x-4">
+					<aside>
+					<nav className="space-x-1">
 						<NavLink href="/">Home</NavLink>
-						<NavLink href="/mom">MOM DashBoard</NavLink>
 						<NavLink href="/auth">Signin</NavLink>
-						<NavLink href="/mom/CM">CM</NavLink>
+						<div>CM</div>
+						<div>MM</div>
+						<div>PR</div>
 					</nav>
+					</aside>
 				</header>
-				<div className="p-4">{children}</div>
+				<section>
+					<nav className="space-x-4">
+						<div>CM1</div>
+						<div>CM2</div>
+						<div>CM3</div>
+						<div>CM4</div>
+					</nav>
+					<div className="p-4">{children}</div>
+				</section>
 			</div>
   )
 }

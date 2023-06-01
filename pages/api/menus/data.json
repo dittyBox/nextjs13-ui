@@ -1,0 +1,30 @@
+[
+	{
+		"parentId": "CM",
+		"menuId": "CM",
+		"name": "CM",
+		"description": "",
+		"depth": 0
+	},
+	{
+		"parentId": "SL",
+		"menuId": "SL",
+		"name": "SL",
+		"description": "",
+		"depth": 0
+	},
+	{
+		"parentId": "PR",
+		"menuId": "PR",
+		"name": "PR",
+		"description": "",
+		"depth": 0
+	},
+	{
+		"parentId": "MM",
+		"menuId": "MM",
+		"name": "MM",
+		"description": "",
+		"depth": 0
+	}
+]
