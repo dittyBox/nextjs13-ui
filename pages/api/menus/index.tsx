@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import data from './data.json';
 
-export type Menus = {
+export type Menu = {
 	parentId: string;
 	menuId: string;
 	name: string;
@@ -11,7 +11,7 @@ export type Menus = {
 
 export default function handler(
 	req: NextApiRequest,
-	res: NextApiResponse<Menus[]>
+	res: NextApiResponse<Menu[]>
 ) {
 	res.status(200).json(data);
 }
