@@ -1,5 +1,7 @@
-import '@/resources/css/globals.css'
-import NavLink from '@/util/NavLink';
+'use client';
+
+import '@/app/resources/css/globals.css'
+import NavLink from '@/app/util/NavLink';
 
 export const metadata = {
   title: 'Create Next App',
@@ -21,7 +23,7 @@ async function getMenus() {
 
 // Root Nav를 DB에서 받아서 동적으로 생성해야함
 
-export default async function RootLayout({
+export default async function Layout({
   children,
 }: {
   children: React.ReactNode

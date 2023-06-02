@@ -1,11 +1,21 @@
-import Image from 'next/image'
-import '@/resources/css/globals.css'
+'use client';
 
+import '@/app/resources/css/globals.css'
+import {useRouter } from 'next/navigation'
+import { Session } from "next-auth";
 
 // session 등 권한인증을 하여 페이지 분기
 
-export default function Home() {
-  return (
-    <div>Home</div>
-  )
+export default function Home({ 
+  children, session
+}: {
+  children: React.ReactNode;
+  session: Session;
+}) {
+  const router = useRouter();
+  if(session){
+    router.push("/mom");
+  } else {
+    router.push("/auth/signin");
+  }
 }
