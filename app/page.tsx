@@ -12,10 +12,5 @@ export default function Home({
   children: React.ReactNode;
   session: Session;
 }) {
-  const router = useRouter();
-  if(session){
-    router.push("/mom");
-  } else {
-    router.push("/auth/signin");
-  }
+  return <div>s</div>
 }
