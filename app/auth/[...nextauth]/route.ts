@@ -11,8 +11,16 @@ const handler = NextAuth({
       // e.g. domain, username, password, 2FA token, etc.
       // You can pass any HTML attribute to the <input> tag through the object.
       credentials: {
-        username: { label: "Username", type: "text", placeholder: "jsmith" },
-        password: { label: "Password", type: "password" },
+        id: {
+          label: "아이디",
+          type: "text",
+          placeholder: "아이디를 입력하세요.",
+        },
+        password: {
+          label: "비밀번호",
+          type: "password",
+          placeholder: "비밀번호를 입력하세요.",
+        },
       },
       async authorize(credentials, req) {
         // // Add logic here to look up the user from the credentials supplied
@@ -26,7 +34,7 @@ const handler = NextAuth({
         //     password: credentials?.password,
         //   }),
         // });
-
+console.log("asd");
         // const user = await res.json();
 
         // if (user) {

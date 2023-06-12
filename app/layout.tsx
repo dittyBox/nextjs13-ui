@@ -1,5 +1,5 @@
 import Providers from './providers'
-import CheckSession from '@/components/CheckSession/page'
+import CheckSession from '@/app/auth/CheckSession/page'
 
 export const metadata = {
   title: "Next-Auth Tutorial",
